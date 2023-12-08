@@ -14,12 +14,12 @@
 
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 0rem;
   gap: 3rem;
 }
 
 .right {
-  margin-top: 2rem;
+  margin-top: 0rem;
   position: relative;
 
   margin-right: 3%;
