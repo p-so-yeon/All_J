@@ -8,10 +8,10 @@
 .left {
   position: relative;
   flex: 1; /* 좌측 영역이 화면 너비의 1/2을 차지하도록 설정 */
-  margin-left: 2rem; /* 좌측 영역에 여백 추가 (선택사항) */
+  margin-left: 3rem; /* 좌측 영역에 여백 추가 (선택사항) */
   text-align: left;
   white-space: nowrap;
-  left: 2rem;
+
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
@@ -21,8 +21,8 @@
 .right {
   margin-top: 2rem;
   position: relative;
-  margin-left: 10px;
-  margin-right: 2rem;
+
+  margin-right: 3%;
   flex: 1; /* 우측 영역이 화면 너비의 1/2을 차지하도록 설정 */
 }
 .title {
@@ -98,4 +98,101 @@
   box-shadow: 10px 10px rgba(128, 128, 128, 0.317);
   border-radius: 10px;
   width: 40rem;
+}
+
+@media only screen and (max-width: 414px) {
+  .landingpage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    height: 100vh;
+    width: auto;
+  }
+
+  .left {
+    position: relative;
+    flex: 2; /* 좌측 영역이 화면 너비의 1/2을 차지하도록 설정 */
+    margin-left: 1rem; /* 좌측 영역에 여백 추가 (선택사항) */
+    text-align: left;
+    white-space: nowrap;
+    left: 0rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 1rem;
+    width: auto;
+  }
+
+  .right {
+    display: flex;
+
+    width: auto;
+    margin-top: 0rem;
+    position: relative;
+    justify-content: center;
+    margin-right: 24rem;
+    flex: 1; /* 우측 영역이 화면 너비의 1/2을 차지하도록 설정 */
+    order: -1; /* 순서를 바꿔서 .right를 위로 올림 */
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    width: auto;
+  }
+  .content {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .planner {
+    position: absolute; /* 이미지를 절대 위치로 설정 */
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 7px 7px rgba(128, 128, 128, 0.317);
+
+    width: 15rem;
+  }
+
+  .write {
+    position: absolute; /* 이미지를 절대 위치로 설정 */
+    top: 5rem; /* 두 번째 이미지를 약간 아래로 이동 */
+    left: 5rem; /* 두 번째 이미지를 약간 오른쪽으로 이동 */
+    z-index: 1;
+    box-shadow: 10px 10px rgba(128, 128, 128, 0.317);
+    border-radius: 10px;
+    width: 15rem;
+  }
+
+  .btn1 {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: #9d9d9d;
+    font-weight: 900;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .btn2 {
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: #70a9fe;
+    width: 5rem;
+    height: 2rem;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+  }
+  .button {
+    display: flex;
+    gap: 15px;
+    margin-top: 3rem;
+  }
 }
