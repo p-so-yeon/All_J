@@ -69,10 +69,6 @@
   background-color: rgb(25, 64, 95);
 }
 
-.left .right {
-  flex: 1;
-}
-
 .image {
   display: flex;
   justify-content: space-between;
@@ -131,7 +127,7 @@
     width: auto;
     margin-top: 0rem;
     position: relative;
-    justify-content: center;
+
     margin-right: 24rem;
     flex: 1; /* 우측 영역이 화면 너비의 1/2을 차지하도록 설정 */
     order: -1; /* 순서를 바꿔서 .right를 위로 올림 */
@@ -155,17 +151,17 @@
     z-index: 2;
     box-shadow: 7px 7px rgba(128, 128, 128, 0.317);
 
-    width: 15rem;
+    width: 10rem;
   }
 
   .write {
     position: absolute; /* 이미지를 절대 위치로 설정 */
-    top: 5rem; /* 두 번째 이미지를 약간 아래로 이동 */
-    left: 5rem; /* 두 번째 이미지를 약간 오른쪽으로 이동 */
+    top: 3rem; /* 두 번째 이미지를 약간 아래로 이동 */
+    left: 2rem; /* 두 번째 이미지를 약간 오른쪽으로 이동 */
     z-index: 1;
     box-shadow: 10px 10px rgba(128, 128, 128, 0.317);
     border-radius: 10px;
-    width: 15rem;
+    width: 10rem;
   }
 
   .btn1 {
