@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@200;300&family=Noto+Serif:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Do+Hyeon&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@200;300&family=Noto+Serif:ital,wght@1,900&display=swap");
 
 .landingpage {
   display: flex;
@@ -27,9 +27,11 @@
 }
 .title {
   font-size: 3.5rem;
-  font-weight: 900;
+
+  font-family: "Black Han Sans";
 }
 .content {
+  font-family: "Do Hyeon";
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
