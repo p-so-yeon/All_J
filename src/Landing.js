@@ -16,8 +16,13 @@ const Landing = () => {
   };
   return (
     <div>
-      <head></head>
+      <div className="Header">
+        <div className="Headerinform">모두 J 가 되는</div>{" "}
+        <div className="Headertitle">All-J</div>{" "}
+      </div>
+
       <body>
+        {" "}
         <div className="landingpage">
           <div className="left">
             <div className="title">
@@ -33,7 +38,6 @@ const Landing = () => {
             </div>
 
             <div className="button">
-              <button className="btn1">자세히 알아보기</button>
               <button className="btn2" onClick={Usepage}>
                 사용 하기
               </button>
