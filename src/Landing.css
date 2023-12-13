@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bagel+Fat+One&family=Black+Han+Sans&family=Do+Hyeon&family=Gasoek+One&family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@200;300&family=Noto+Serif:ital,wght@1,900&display=swap");
+.land {
+  border-radius: 20px;
+  height: 97vh;
+  width: 170vh;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  border: solid black;
+}
 .Header {
   top: 1rem;
   white-space: nowrap;
-  position: absolute;
+  position: relative;
 
   display: flex;
   flex-direction: column;
-  left: 100rem;
+  right: 1rem;
 }
 .Headerinform {
   color: #000000;
@@ -41,7 +49,6 @@
 .right {
   margin-top: 7rem;
   position: relative;
-
   margin-right: 2%;
   flex: 1; /* 우측 영역이 화면 너비의 1/2을 차지하도록 설정 */
 }
@@ -121,7 +128,10 @@
 @media only screen and (max-width: 414px) {
   .Header {
     white-space: nowrap;
-    left: 18rem;
+    text-align: center;
+    left: 0rem;
+    width: 100%;
+    background-color: #57698c;
     top: 1rem;
     height: auto;
     position: absolute;
@@ -154,7 +164,7 @@
   .left {
     position: relative;
     flex: 2; /* 좌측 영역이 화면 너비의 1/2을 차지하도록 설정 */
-    margin-left: 1rem; /* 좌측 영역에 여백 추가 (선택사항) */
+    margin-left: 0rem; /* 좌측 영역에 여백 추가 (선택사항) */
     text-align: left;
     white-space: nowrap;
     left: 0rem;
@@ -163,18 +173,18 @@
     margin-top: 1rem;
     padding-top: 20px;
     gap: 1rem;
-    width: auto;
+    width: 100%;
+
+    background-color: white;
   }
 
   .right {
-    margin-left: 2rem;
-    display: flex;
-    left: 0rem;
-    width: auto;
+    background-color: #57698c;
+
+    width: 100%;
     margin-top: -1rem;
     position: relative;
-    justify-content: center;
-    margin-right: 24rem;
+    text-align: center;
     flex: 1.1; /* 우측 영역이 화면 너비의 1/2을 차지하도록 설정 */
     order: -1; /* 순서를 바꿔서 .right를 위로 올림 */
   }
@@ -183,27 +193,30 @@
     font-size: 1.2rem;
     font-weight: 900;
     width: auto;
+    margin-left: 2rem;
   }
   .content {
     font-size: 0.9rem;
     line-height: 1.2rem;
+    width: auto;
+    margin-left: 2rem;
   }
 
   .planner {
     position: absolute; /* 이미지를 절대 위치로 설정 */
-    top: 0;
-    left: 0;
+    top: 3rem;
+    left: 3rem;
     border-radius: 10px;
     z-index: 2;
     box-shadow: 7px 7px rgba(128, 128, 128, 0.317);
-
+    right: 20rem;
     width: 15rem;
   }
 
   .write {
     position: absolute; /* 이미지를 절대 위치로 설정 */
     top: 5rem; /* 두 번째 이미지를 약간 아래로 이동 */
-    left: 5rem; /* 두 번째 이미지를 약간 오른쪽으로 이동 */
+    left: 6rem; /* 두 번째 이미지를 약간 오른쪽으로 이동 */
     z-index: 1;
     box-shadow: 10px 10px rgba(128, 128, 128, 0.317);
     border-radius: 10px;
@@ -243,6 +256,7 @@
   .button {
     display: flex;
     justify-content: center;
-    margin-top: rem;
+    margin-top: 0rem;
+    width: auton;
   }
 }
