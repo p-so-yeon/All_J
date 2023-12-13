@@ -1,6 +1,6 @@
 import React from "react";
 import "./Landing.css";
-import planner from "./planner.png";
+import planner from "./landingimg.png";
 import write from "./write.png";
 import ReactGA from "react-ga4";
 import { useNavigate } from "react-router-dom";
@@ -42,10 +42,7 @@ const Landing = () => {
           </div>
         </div>
         <div className="right">
-          <div className="image">
-            <img src={planner} alt="img" className="planner" />{" "}
-            <img src={write} className="write" alt="img" />
-          </div>
+          <img src={planner} alt="img" className="planner" />{" "}
         </div>
       </div>
     </div>
